@@ -30,23 +30,23 @@ Can be a local image or a image from web like `http://photo.yupoo.com/ninjapan/B
 
 *   stikker.add_text(x, y, options)
 
-### `size: string`
+    ## `size: string`
 
-A string to define the width and height of text block. For example: `100x`, `200x100`. See imagemagick docs for detail.
+    A string to define the width and height of text block. For example: `100x`, `200x100`. See imagemagick docs for detail.
 
-Default: `200x`
-
-
-### `font: string`
-
-A path to a font file.
-
-Default: `fonts/msyh.ttf`
-
-Default: `200x`
+    Default: `200x`
 
 
-### `fontsize: num`
+    ## `font: string`
+
+    A path to a font file.
+
+    Default: `fonts/msyh.ttf`
+
+    Default: `200x`
+
+
+## `fontsize: num`
 
 font size.
 
