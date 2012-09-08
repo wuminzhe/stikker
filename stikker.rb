@@ -26,7 +26,7 @@ class Stikker
     #
     size =  config['size'].nil?           ? '200x'                    : config['size']
     font =  config['font'].nil?           ? "#{@dir}/fonts/msyh.ttf"  : config['font']
-    fontsize = config['fontsize'].nil?    ? '16'                      : config['fontsize']
+    fontsize = config['fontsize'].nil?    ? '18'                      : config['fontsize']
     fontcolor = config['fontcolor'].nil?  ? '#000000'                 : config['fontcolor']
     kerning = config['kerning'].nil?      ? '0'                       : config['kerning']
     bgcolor = config['bgcolor'].nil?      ? 'none'                   : config['bgcolor']

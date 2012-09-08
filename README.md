@@ -19,12 +19,65 @@ stikker.generate("./example/example1.jpg")
 Method and Options
 -------
 
+#### Stikker.new(background_image)
+
+### `background_image: string`
+
+Can be a local image or a image from web like `http://photo.yupoo.com/ninjapan/Bp2axpm7/medish.jpg`. If it is a web image, stikker will download it to tmp folder. Next time, if the file exsit, stikker will not download again.
+
+
+
 #### stikker.add_text(x, y, options)
 
 ### `size: string`
 
-A string to define the width and height of text block. 
-like `100x`, `200x100`
-see imagemagick docs for detail.
+A string to define the width and height of text block. For example: `100x`, `200x100`. See imagemagick docs for detail.
+
+Default: `200x`
+
+
+### `font: string`
+
+A path to a font file.
+
+Default: `fonts/msyh.ttf`
+
+Default: `200x`
+
+
+### `fontsize: num`
+
+font size.
+
+Default: `18`
+
+
+### `fontcolor: string`
+
+font color
+
+Default: `#000000`
+
+
+### `kerning: num`
+
+font kerning.
+
+Default: `0`
+
+
+### `bgcolor: string`
+
+text background color. For example: `none`, `#ffffff`
+
+Default: `none`
+
+
+
+#### stikker.add_image(x, y, image)
+
+### `image: string`
+
+Can be a local image or a image from web.
 
 Default: `200x`
