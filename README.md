@@ -3,8 +3,8 @@ stikker
 
 a ruby class help to add stickers(texts, images) to a background image easily. based on imagemagick
 
-Easy to use
------------
+Example
+-------
 
 ```
 #example1
@@ -18,7 +18,7 @@ stikker.generate("./example1.jpg")
 ```
 
 Method and Options
--------
+------------------
 
 *   Stikker.new(background_image)
 
