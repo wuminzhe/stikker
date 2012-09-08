@@ -20,7 +20,8 @@ class Stikker
 
     #中文空格替换成中文逗号，英文空格替换为英文都好，因为空格有时会引起不正常换行
     #双引号转换成单引号
-    content = content.nil? ? '' : content.gsub("　", "，").gsub(" ", ",").gsub("\"", "'")
+    #content = content.nil? ? '' : content.gsub("　", "，").gsub(" ", ",").gsub("\"", "'")
+    content = content.nil? ? '' : content.gsub("\"", "'")
     
     #
     size =  config['size'].nil?           ? '200x'                    : config['size']
@@ -28,7 +29,7 @@ class Stikker
     fontsize = config['fontsize'].nil?    ? '16'                      : config['fontsize']
     fontcolor = config['fontcolor'].nil?  ? '#000000'                 : config['fontcolor']
     kerning = config['kerning'].nil?      ? '0'                       : config['kerning']
-    bgcolor = config['bgcolor'].nil?      ? 'white'                   : config['bgcolor']
+    bgcolor = config['bgcolor'].nil?      ? 'none'                   : config['bgcolor']
 
     #
     @command << "-page +#{x}+#{y} \\\( -size #{size} -font '#{font}' -fill '#{fontcolor}' -pointsize #{fontsize} -kerning #{kerning} -background '#{bgcolor}' caption:\"#{content}\" \\\)"
