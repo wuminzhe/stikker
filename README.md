@@ -13,13 +13,14 @@ require '../stikker.rb'
 stikker = Stikker.new("http://photo.yupoo.com/ninjapan/Bp2axpm7/medish.jpg")
 stikker.add_text(230, 580, "& WHITE", {'fontsize'=>'33', 'fontcolor'=>'#ffffff'})
 stikker.add_text(210, 580, "BLACK")
-stikker.generate("./example/example1.jpg")
+stikker.add_image(50, 50, "../tmp/balloon.png")
+stikker.generate("./example1.jpg")
 ```
 
 Method and Options
 -------
 
-#### Stikker.new(background_image)
+*   Stikker.new(background_image)
 
 ### `background_image: string`
 
@@ -27,7 +28,7 @@ Can be a local image or a image from web like `http://photo.yupoo.com/ninjapan/B
 
 
 
-#### stikker.add_text(x, y, options)
+*   stikker.add_text(x, y, options)
 
 ### `size: string`
 
@@ -74,7 +75,7 @@ Default: `none`
 
 
 
-#### stikker.add_image(x, y, image)
+*   stikker.add_image(x, y, image)
 
 ### `image: string`
 
