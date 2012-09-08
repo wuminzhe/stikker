@@ -1,6 +1,6 @@
 require '../stikker.rb'
 
-stikker = Stikker.new("http://img1.baixing.net/m/6efdd859dafc2e6e684c66ce1db4d1bd.jpg")
+stikker = Stikker.new("../tmp/aa5de74ae9e2091dc536b7710e2d6a1a6ee327d0.jpg")
 stikker.add_text(0, 0, "a", 'bgcolor'=>'green')
 stikker.add_text(5, 5, "a", 'bgcolor'=>'yellow')
 stikker.add_text(10, 10, "a", 'bgcolor'=>'blue')
