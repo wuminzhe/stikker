@@ -1,0 +1,13 @@
+1. use '-layers flatten'
+convert '/Users/wumz/Documents/workspace/stikker/tmp/aa5de74ae9e2091dc536b7710e2d6a1a6ee327d0.jpg' \
+-page +230+580 \( -size 560x -font '/Users/wumz/Documents/workspace/stikker/fonts/msyh.ttf' -fill '#ffffff' -pointsize 33 -kerning 0 -background 'none' caption:"& WHITE" \) \
+-page +210+580 \( -size 560x -font '/Users/wumz/Documents/workspace/stikker/fonts/msyh.ttf' -fill '#000000' -pointsize 21 -kerning 0 -background 'none' caption:"BLACK" \) \
+-page +0+0 \( '../tmp/balloon.png' -resize 50% \) \
+-background none -layers flatten './example1.jpg'
+
+2. use composite command of convert
+convert '/Users/wumz/Documents/workspace/stikker/tmp/aa5de74ae9e2091dc536b7710e2d6a1a6ee327d0.jpg' \
+\( -size 560x -font '/Users/wumz/Documents/workspace/stikker/fonts/msyh.ttf' -fill '#ffffff' -pointsize 33 -kerning 0 -background 'none' caption:"& WHITE" \) -geometry 50%x50%+230+580 -composite \
+\( -size 560x -font '/Users/wumz/Documents/workspace/stikker/fonts/msyh.ttf' -fill '#000000' -pointsize 21 -kerning 0 -background 'none' caption:"BLACK" \)  -geometry +210+580 -composite \
+'../tmp/qr.png'  -geometry 50%x50%+50+50  -composite \
+'./example1.jpg'
